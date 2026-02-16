@@ -1,0 +1,6 @@
+ODE : Ordinary Diff. Eq.
+
+[ball vector] = [original state of ball vector]+f*dt.  # returned by f will be vx, vy, 0,0
+
+
+'blitting' for animating
