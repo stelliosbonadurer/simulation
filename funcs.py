@@ -46,7 +46,7 @@ def solve_ode(f, tspan, y0, method=EulerRichardson, *args, **options):
         t.append(tspan[0] + i * dt)
         y.append(method(dt, f, t[i-1], y[i-1], args))
         
-        #This is specific to the ballistics notebook and cuts off the simulation when the bullet hits the y target/ground
+        #This is specific to ballistics and cuts off the simulation when the bullet hits the y target/ground
         if y_ground is not None:
             if y[-1][1] > y_ground:
                 has_risen = True
